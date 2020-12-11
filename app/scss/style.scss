@@ -15,9 +15,14 @@
         align-items: center;
         margin-bottom: 110px;
     }
+    &__logo{
+        width: 150px;
+    }
 
     &__menu {
-
+        &-list{
+            margin-right: 70px;
+        }
         //Шапка начало
         li {
             display: inline-block;
@@ -189,7 +194,7 @@
             font-weight: 700;
         }
         p{
-            color: #313131;
+            color: $title;
             font-size: 48px;
             font-weight: 700;
         }
@@ -198,7 +203,7 @@
         width: 560px;
        
         &-title{
-            color: #313131;
+            color: $title;
             font-weight: 700;
             font-size: 40px;
             line-height: 49px;
@@ -215,6 +220,45 @@
 
 /*end about*/
 
+/*start advantages*/
+.advantages{
+    padding: 60px 0;
+    &__items{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        text-align: center;
+        width: 282px;
+        &-img{
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 46px;
+            color: #313A64;
+            .circle{
+                position: relative;
+                img{
+                    &:nth-child(3){
+                        transform: rotate(60deg);
+                    }
+                }
+                p{
+                    position: absolute;
+                    top: 45px;
+                    left: 130px;
+                    
+                }
+            }
+        }
+        &-title{
+            font-size: 24px;
+            line-height: 29px;
+            color: $title;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+    }
+}
 
-
+/*end advantages*/
 
