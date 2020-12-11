@@ -174,5 +174,47 @@
 }
 
 
+/*start about*/
+.about{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 60px;
+    }
+    &__counter{
+        padding-top: 36px;
+        span{
+            color: #313A64;
+            font-size: 158px;
+            font-weight: 700;
+        }
+        p{
+            color: #313131;
+            font-size: 48px;
+            font-weight: 700;
+        }
+    }
+    &__info{
+        width: 560px;
+       
+        &-title{
+            color: #313131;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        &-text{
+            font-size: 24px;
+            line-height: 29px;
+            text-align: right;
+        }
+    }
+}
+
+/*end about*/
+
+
 
 
