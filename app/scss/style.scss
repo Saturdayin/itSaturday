@@ -2,18 +2,18 @@
 @import '_global';
 
 .header {
-    background-image: url(../images/header-bg.png);
+    background-image: url(../images/header-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 900px;
     padding-top: 10px;
-
-    &__inner {
+   
+    &__top {
         height: 85px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 110px;
     }
 
     &__menu {
@@ -68,7 +68,7 @@
                 font-size: 16px;
                 line-height: 20px;
                 font-weight: 600;
-                margin-right: 64px;
+                // margin-right: 64px;
 
                 &::after {
                     content: '';
@@ -93,9 +93,11 @@
                 font-size: 16px;
                 line-height: 20px;
                 font-weight: 600;
-                margin-right: 64px;
+                // margin-right: 64px;
                 padding-top: 28px;
                 margin-bottom: 5px;
+                display: block;
+                
 
                 &::after {
                     content: '';
@@ -124,4 +126,53 @@
             text-decoration: underline;
         }
     }
+    &__inner{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__info{
+        width: 660px;
+        padding-top: 45px;
+        margin-right: 180px;
+        &-btn{
+            padding: 23px 35px;
+            color: #fff;
+            background: linear-gradient(89.93deg, #12A7B1 0.04%, #3A58C2 99.92%);
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            
+            &:hover{
+                background: linear-gradient(89.93deg, #51d9e2 0.04%, #8c9fe4 99.92%);
+            }
+            
+        }
+    }
+    &__title{
+        font-size: 42px;
+        line-height: 51px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 39px;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 27px;
+        color: #fff;
+        margin-bottom: 96px;
+    }
+    
+
 }
+.skos{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: block;
+}
+
+
+
+
