@@ -222,7 +222,7 @@
 
 /*start advantages*/
 .advantages{
-    padding: 60px 0;
+    padding: 80px 0px 150px;
     &__items{
         display: flex;
         justify-content: space-between;
@@ -230,6 +230,39 @@
     &__item{
         text-align: center;
         width: 282px;
+        &:nth-child(2){
+            padding-top: 50px;
+            .circle{
+                transform: rotate(60deg);
+                p{
+                    transform: rotate(-60deg); 
+                }
+                    
+            
+            }
+        }
+        &:nth-child(3){
+            .circle{
+                transform: rotate(135deg);
+                p{
+                    transform: rotate(-135deg); 
+                }
+                    
+            
+            }
+        }
+        &:nth-child(4){
+            padding-top: 50px;
+            .circle{
+                transform: rotate(-75deg);
+                p{
+                    transform: rotate(75deg); 
+                }
+                    
+            
+            }
+        }
+
         &-img{
             font-weight: 500;
             font-size: 38px;
@@ -237,11 +270,7 @@
             color: #313A64;
             .circle{
                 position: relative;
-                img{
-                    &:nth-child(3){
-                        transform: rotate(60deg);
-                    }
-                }
+                
                 p{
                     position: absolute;
                     top: 45px;
@@ -261,4 +290,106 @@
 }
 
 /*end advantages*/
+/*start services*/
+.services{
+    background-image: url(../images/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    padding-bottom: 170px;
 
+    &__title{
+        text-align: center;
+        margin-bottom: 100px;
+        font-size: 40px;
+        line-height: 49px;
+        color: $title;
+        
+       
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 150px;
+    }
+
+
+    &__item{
+        background-color: #fff;
+        width: 290px;
+        border-radius: 20px;
+        margin-bottom: 80px;
+        & + .services__item{
+            margin-left: 80px;
+        }
+        &-info{
+            padding: 55px 35px 70px 30px;
+        }
+        &-title{
+            font-size: 28px;
+            line-height: 34px;
+            text-align: center;
+            color: $title;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        &-price{
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 400;
+            color: $title;
+            text-align: center;
+            margin-bottom: 65px;
+            span{
+                font-weight: 700; 
+            }
+        }
+        &-list{
+            margin-bottom: 52px;
+            
+            li{
+                padding-left: 32px;
+                position: relative;
+                color: #000;
+                font-size: 16px;
+                line-height: 20px;
+                
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../images/icon/services-ok.svg);
+                    left: 0;
+                }
+
+            }
+            li + li{
+                margin-top: 15px;
+            }
+        }
+        &-btn{
+            button{
+                width: 100%;
+                padding: 13px 53px;
+                border: none;
+                background: linear-gradient(89.93deg, #12A7B1 0.04%, #3A58C2 99.92%);
+                border-radius: 30px;
+                color: #fff;
+                font-size: 20px;
+                line-height: 24px;
+                cursor: pointer;
+                transform: all 0.5px ease-in;
+                &:hover{
+                    background: linear-gradient(89.93deg, #56e2ec 0.04%, #5c7beb 99.92%);
+                }
+            }
+
+            
+        }
+    }
+}
+/*end services*/
