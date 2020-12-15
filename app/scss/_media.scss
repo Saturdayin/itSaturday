@@ -48,15 +48,24 @@
         }
     }
  }
- @media (max-width: 1029px){
+ @media (max-width: 1060px){
     .portfolio{
         &__item{
         
-            margin-right: 0px;
+            width: 400px;
         }
         
     }
  }
+//  @media (max-width: 1029px){
+//     .portfolio{
+//         &__item{
+        
+//             margin-right: 0px;
+//         }
+        
+//     }
+//  }
  @media (max-width: 1050px){
     .services{
         &__inner{
@@ -143,7 +152,15 @@
         }
     }
  }
-
+ @media (max-width: 845px){
+    .portfolio{
+        &__item{
+        
+            width: 500px;
+        }
+        
+    }
+ }
  @media (max-width: 820px){
     .header{
         &__image{
